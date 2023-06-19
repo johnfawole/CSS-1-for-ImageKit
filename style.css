@@ -1,0 +1,70 @@
+.central-div{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+}
+
+.image-div-before{
+    width: 700px;
+    height: 600px;
+}
+
+.image-div-after{
+    width: 700px;
+    height: 600px;
+}
+
+/* The background-image Property with background-size and background-position */
+.element {
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: top right;
+}
+
+/* Image or Background Image with Persistent Ratio */
+.container {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+  
+.container img {
+  width: 70%;
+  height: auto;
+}
+
+/* Round Cropping Using border-radius*/
+.round-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/* Complex Paths of Cropping with clip-path*/
+.custom-crop {
+  Width: 300px;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 25% 100%);
+}
+
+/* CSS Grid for Image Cropping: */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* CSS Transform Property for Image Cropping*/
+
+#image{
+    width: 400px;
+    transform: scale(0.5) translateX(50px) rotate(20deg);
+}
+#uncropped-image{
+    width: 400px;
+    height: 500px;
+}
